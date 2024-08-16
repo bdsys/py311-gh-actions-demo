@@ -9,7 +9,8 @@
 # ARG PYTHON_VERSION=10.11.4
 # FROM python:${PYTHON_VERSION}-slim as base
 
-FROM quay.cnqr.delivery/baseimage/python:3.11-minimal
+# FROM quay.cnqr.delivery/baseimage/python:3.11-minimal
+FROM bdsys/rhel8-fips-base:latest
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
