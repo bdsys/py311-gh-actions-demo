@@ -10,7 +10,9 @@
 # FROM python:${PYTHON_VERSION}-slim as base
 
 # FROM quay.cnqr.delivery/baseimage/python:3.11-minimal
-FROM bdsys/rhel8-fips-base:latest
+# FROM bdsys/rhel8-fips-base:latest
+# FROM bdsys/rhel8-fips-base:cicd-automated
+FROM bdsys/rhel8-fips-base:vanilla
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1

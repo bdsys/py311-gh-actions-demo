@@ -15,9 +15,7 @@ spec:
     spec:
       containers:
       - name: fastapi-service
-        # image: technox64/python-docker-dev-example-test:latest
-        image: bdsys/rhel8-fips-base:latest
-        # image: bdsys/py311-gh-actions-demo
+        image: bdsys/rhel8-fips-base:cicd-automated
         imagePullPolicy: Always
         env:
         - name: POSTGRES_PASSWORD
