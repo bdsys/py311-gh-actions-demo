@@ -26,4 +26,5 @@ jobs:
           platforms: linux/amd64
           push: true
           # tags: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
-          tags: ${{ vars.DOCKER_USERNAME }}/rhel8-fips-base:cicd-automated
+          # tags: ${{ vars.DOCKER_USERNAME }}/rhel8-fips-base:cicd-automated
+          tags: ${{ vars.DOCKER_USERNAME }}/rhel8-fips-base:latest
